@@ -104,11 +104,15 @@ export default function Home() {
 }
 
 const SLIDES = [
-  [lakebed, '50% 50%', 'Where Water Once Stood.', 'Dry lakebeds and cracked fields tell the story of drought. We document them so help can find the villages that live with them.', '/ground-reality', 'See Ground Reality', 'Two men digging in a cracked, dried-up lakebed'],
-  [well1, '50% 60%', 'A Village Should Never Be Forgotten.', 'When a village struggles for water, food and survival, the world should know. VoiceOfVillage connects drought-affected communities with people and organisations that can make a difference.', '/villages', 'Explore Villages', 'Women gathered around a large dry well with pots and ropes'],
-  [farmer, '70% 35%', 'Every Village Has a Story.', 'A Voice for Every Village. A Hope for Every Life. Documented, verified and shared with those who can help.', '/register', 'Register Your Village', 'A farmer holding dried crop on cracked earth'],
-  [waterscarity, '50% 55%', 'A Story Worth Hearing.', 'Farmers, women and families living with water scarcity across rural Maharashtra.', '/ground-reality', 'Ground Reality', 'Women carrying metal water pots along a dirt path'],
-  [dryland, '50% 70%', 'From Relief to Resilience.', 'Relief today, development tomorrow, and stories that keep every village in view.', '/support', 'Support a Village', 'Cracked dry farmland under a blue sky'],
+  [lakebed, '50% 50%', 'Where Water Once Stood.', '...', '/ground-reality', 'See Ground Reality', '...'],
+  [well1, '50% 60%', 'A Village Should Never Be Forgotten.', '...', '/villages', 'Explore Villages', '...'],
+  [farmer, '70% 35%', 'Every Village Has a Story.', '...', '/register', 'Register Your Village', '...'],
+  [waterscarity, '50% 55%', 'A Story Worth Hearing.', '...', '/ground-reality', 'Ground Reality', '...'],
+
+  // NEW SLIDE
+  [tanker, '50% 50%', 'Be the Hand a Village Needs.', 'Give your time, skills and voice. Volunteers document stories, verify villages and carry help to the places that wait the longest.', '/volunteer', 'Become a Volunteer', 'Volunteers helping a village during drought'],
+
+  [dryland, '50% 70%', 'From Relief to Resilience.', '...', '/support', 'Support a Village', '...'],
 ]
 function Banner() {
   const [i, setI] = useState(0)
