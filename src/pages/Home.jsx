@@ -139,11 +139,11 @@ function Banner() {
             <p className="lead">{d}</p>
           </motion.div>
         </AnimatePresence>
+        <AnimatePresence mode="wait"><motion.img key={'m' + i} className="hmob" src={img} alt={alt} style={{ objectPosition: pos }} {...fade} /></AnimatePresence>
         <div className="hbtns">
           <Link to={to} className="hb g"><i><ArrowRight size={22} /></i>{cta}</Link>
           <Link to={second[0]} className="hb r"><i><S2 size={22} /></i>{second[1]}</Link>
         </div>
-        <AnimatePresence mode="wait"><motion.img key={'m' + i} className="hmob" src={img} alt={alt} style={{ objectPosition: pos }} {...fade} /></AnimatePresence>
         <div className="hdots" role="tablist" aria-label="Slides">{SLIDES.map((_, k) => <button key={k} aria-label={'Slide ' + (k + 1)} className={k === i ? 'on' : ''} onClick={() => setI(k)} />)}</div>
       </div>
     </section>

@@ -33,3 +33,4 @@ export const MENUS = [
     ] }],
   },
 ]
+export const NAV_CTA = { to: '/volunteer', label: 'Become a Volunteer', icon: HandHeart }

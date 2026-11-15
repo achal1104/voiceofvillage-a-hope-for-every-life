@@ -108,11 +108,12 @@
 // }
 import { useState, useEffect, useRef } from 'react'
 import { NavLink, Link, useLocation } from 'react-router-dom'
-import { Menu, X, ArrowRight, Heart, ChevronDown } from 'lucide-react'
+import { Menu, X, ArrowRight, Heart, HandHeart, ChevronDown } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { LANGS } from '../data/content.js'
 import { MENUS } from '../data/nav.js'
 import { Brand } from './Logo.jsx'
+
 
 const paths = (m) => m.cols.flatMap((c) => c.items.map((i) => i[0]))
 
@@ -192,8 +193,9 @@ export default function Header({ lang, setLang }) {
             )
           })}
         </nav>
-        <div className="hda">
+                <div className="hda">
           <Link to="/register" className="hl">Register Your Village</Link>
+          <Link to="/volunteer" className="btn ghost nav-cta"><HandHeart size={16} /> Become a Volunteer</Link>
           <Link to="/support" className="btn"><Heart size={16} /> Support a Village</Link>
         </div>
         <button className="bg" aria-label="Menu" aria-expanded={open} onClick={() => setOpen(!open)}>{open ? <X /> : <Menu />}</button>
@@ -210,7 +212,8 @@ export default function Header({ lang, setLang }) {
                 {acc === m.key && <div className="mab">{m.cols.map((c, ci) => <div key={ci}>{c.title && <p className="ddh">{c.title}</p>}{c.items.map((it) => <Item key={it[0]} it={it} onGo={close} />)}</div>)}</div>}
               </div>
             ))}
-            <Link to="/register" className="btn ghost" onClick={close}>Register Your Village</Link>
+                     <Link to="/register" className="btn ghost" onClick={close}>Register Your Village</Link>
+            <Link to="/volunteer" className="btn ghost" onClick={close}><HandHeart size={16} /> Become a Volunteer</Link>
             <Link to="/support" className="btn" onClick={close}><Heart size={16} /> Support a Village</Link>
           </motion.div>
         )}

@@ -215,3 +215,5 @@ select{font:inherit}.frm select{border:1px solid var(--bd);border-radius:12px;pa
 .snap{scroll-padding-inline:0;-webkit-overflow-scrolling:touch;scrollbar-width:none}.snap::-webkit-scrollbar{display:none}
 .arr.dk{padding:0;border-radius:50%;height:44px;width:44px;border:1px solid var(--bd)}
 @media(max-width:899px){.arr.dk{width:40px;height:40px}}
+.nav-cta { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+@media (max-width: 1180px) { .hda .nav-cta { display: none; } }
