@@ -369,3 +369,17 @@ html[data-theme="green"] .thm .k:after{background:#2fb23a}
 .thm-m{display:none}
 @media(max-width:1239px){.thm-m{display:flex;flex:1;align-items:center;justify-content:center;min-width:0}}
 @media(max-width:480px){.gb .lg{width:36px!important;height:36px!important}.thm{width:42px;height:22px}.thm .k{width:16px;height:16px}.thm .k:after{inset:3.5px}html[data-theme="green"] .thm .k{transform:translateX(20px)}}
+/* ===== Funding page, story pages, news cards ===== */
+.newsg{display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));margin-top:24px}
+.nc{display:flex;flex-direction:column;gap:8px;height:100%}.nc h3{margin:6px 0 0;font-size:18px;line-height:1.3}.nc p{margin:0;font-size:14.5px}.nc .rm{margin-top:auto;padding-top:6px}
+.nd{margin-left:10px;font-size:12px;color:var(--mu)}
+.fl8{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.fl8 li{height:100%;background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:22px;display:grid;gap:8px;align-content:start}.fl8 li p{margin:0;color:var(--mu);font-size:14.5px}.fl8 b{font:800 17px 'Inter Tight',sans-serif;color:var(--g)}.fl8 .fi{color:var(--g2)}
+.art{display:grid;gap:40px}@media(min-width:900px){.art{grid-template-columns:minmax(0,1.7fr) minmax(260px,1fr);align-items:start}.aside{position:sticky;top:130px}}
+.art article p{color:var(--tx2)}.aside{display:grid;gap:16px}
+.note-b{display:flex;gap:10px;align-items:flex-start;margin:20px 0}.note-b svg{flex:none;margin-top:3px}
+.fact{display:grid;gap:2px;margin:12px 0 0}.fact b{font:800 24px 'Inter Tight',sans-serif;color:var(--g)}.fact span{color:var(--mu);font-size:14px}
+.nl2{margin:0;padding-left:18px;color:var(--tx2)}
+.sphotos{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));margin-top:12px}.sphotos .mbtn{border-radius:16px;overflow:hidden}.sphotos img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.snav{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}.snav a{display:inline-flex;gap:8px;align-items:center;font:700 14px 'Inter Tight',sans-serif;color:var(--g)}.snav a:hover{color:var(--gn2)}
+.story a.slink{display:block;color:inherit}
